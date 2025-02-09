@@ -1,51 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
-  <header class="bg-gray-800 text-white py-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">My Portfolio</h1>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:text-gray-300">About</a>
-        <a href="#projects" class="hover:text-gray-300">Projects</a>
-        <a href="#contact" class="hover:text-gray-300">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <section id="about" class="py-16 bg-white text-center">
-    <h2 class="text-4xl font-bold mb-4">About Me</h2>
-    <p class="text-gray-600">I am an IT student passionate about programming, web development, and solving real-world problems.</p>
-  </section>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio Template</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="icon" type="image/x-icon" href="images/favicon.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
 
-  <section id="projects" class="py-16 bg-gray-100">
-    <h2 class="text-4xl font-bold text-center mb-8">My Projects</h2>
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-lg shadow-lg p-4">
-        <img src="https://via.placeholder.com/300x200" alt="Project 1" class="rounded-t-lg">
-        <h3 class="text-xl font-bold mt-4">Project 1</h3>
-        <p class="text-gray-600">A brief description of Project 1.</p>
-      </div>
-      <div class="bg-white rounded-lg shadow-lg p-4">
-        <img src="https://via.placeholder.com/300x200" alt="Project 2" class="rounded-t-lg">
-        <h3 class="text-xl font-bold mt-4">Project 2</h3>
-        <p class="text-gray-600">A brief description of Project 2.</p>
-      </div>
-      <div class="bg-white rounded-lg shadow-lg p-4">
-        <img src="https://via.placeholder.com/300x200" alt="Project 3" class="rounded-t-lg">
-        <h3 class="text-xl font-bold mt-4">Project 3</h3>
-        <p class="text-gray-600">A brief description of Project 3.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-gray-800 text-white py-4 text-center">
-    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-  </footer>
-</body>
+	<body>
+		<div id="top">
+			<h2>UX/UI</h2>
+			<p class="source">Source Code: <a href="https://www.github.com/jesusalberto18/static-portfolio-template"><i class="fab fa-github"></i></a></p>
+		</div>
+		<img src="images/ui-banner-1.jpg">
+		<div id="navbar">
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#hire">Hire</a></li>
+			</ul>
+		</div>
+		<a href="#">
+			<button class="btn-download">Download My CV Here</button>
+		</a>
+		<div class="intro">
+			<h1>Hello world! <br> My name is [yourName]</h1>
+			<h3>This is my portfolio template</h3>
+		</div>
+		<a href="https://dribbble.com">
+			<button class="btn-hire">Hire</button>
+		</a>
+		<img src="images/ux-banner-1.jpg">
+		<div id="about">
+			<h1>About</h1>
+			<p class="content">Designing meaningful digital experiences that captivate, engage, and simplify life for users is my passion. With my experience in UI/UX design and a strong portfolio of successful projects, I bring an unique blend of creativity and technical expertise to the table. From concept to launch, I take pride in crafting intuitive and aesthetically pleasing designs that solve real world problems. If you're looking for a designer who's dedicated to elevating user experiences and creating impactful solutions, let's connect!</p>
+			<br>
+			<strong class="interest">Interested in:</strong>
+          	<em>React Frontend Developer, Web Designer, UX/UI Designer.</em>
+		</div>
+		<hr>
+		<div id="skills">
+			<h1>Skills</h1>
+			<ul>
+				<li class="left">HTML</li>
+				<li class="right">CSS</li>
+				<li class="left">JavaScript</li>
+				<li class="right">React</li>
+				<li class="left">Figma</li>
+			</ul>
+		</div>
+		<hr>
+		<div id="projects">
+			<h1>Projects</h1>
+			<div class="project-card">
+				<div class="card-image">
+					<img src="images/ux-banner-1.jpg">
+				</div>
+				<div class="card-content">
+					<h2>Project #1</h2>
+					<p>LOREM IPSUM DOLOR SIT AMET</p>
+					<a href="#">Learn More</a>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div id="hire">
+			<h1>Hire</h1>
+			<form class="form">
+              <input id="name" type="text" name="name" placeholder="Name" required>
+              <input id="lastname" type="text" name="lastname" placeholder="Last Name" required>
+              <input id="phone" type="text" name="phone" placeholder="Phone Number" required>
+              <input id="email" type="text" name="email" placeholder="E-mail" required>
+              <input id="subject" type="text" name="subject" placeholder="Subject" required>
+              <textarea id="message" name="message" rows="5" cols="25" placeholder="Message" required></textarea>
+	          <a type="submit" class="btn-form">Send</a> 
+	        </form>
+		</div>
+		<footer class="footer">
+			<p class="social">Follow my path on:</p>
+	        <div class="social">
+	          <a href="https://www.github.com"><i class="fab fa-github"></i></a>
+	          <a href="https://www.dribbble.com"><i class="fab fa-dribbble"></i></a>
+	          <a href="https://www.figma.com"><i class="fab fa-figma"></i></a>
+	          <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+	        </div>
+			<h2 class="footer">""A lil bit of frontend here... A lil bit of backend there... Some mobile and UI""</h2>
+			<h2 class="footer">Copyright &copy;, 2023.</h2>
+		</footer>
+	</body>
+	
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="js/scroll.js"></script>
 </html>
