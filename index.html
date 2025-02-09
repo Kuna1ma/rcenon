@@ -166,90 +166,107 @@
   </section>
   
 
-    <section id="about" class="py-16 bg-white text-gray-900">
-      <div class="container mx-auto px-6 lg:px-12">
-        <!-- Section Title -->
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900">About Me</h2>
-          <p class="text-gray-600 mt-2">
-            Passionate IT student specializing in development, programming, and troubleshooting.
+  <section id="about" class="py-16 bg-white text-gray-900 relative">
+    <div class="container mx-auto px-6 lg:px-12">
+      <!-- Section Title -->
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-900">About Me</h2>
+        <p class="text-gray-600 mt-2">
+          Passionate IT student specializing in development, programming, and troubleshooting.
+        </p>
+      </div>
+  
+      <!-- About & Skills Grid -->
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- About Content -->
+        <div class="space-y-6" data-aos="fade-up" data-aos-duration="1000">
+          <p class="text-gray-700 text-lg leading-relaxed">
+            I am an IT student with a strong background in programming and software development, specializing in Laravel and database management.
+            I am passionate about problem-solving and participate in programming competitions to sharpen my skills.
           </p>
-        </div>
-    
-        <!-- About & Skills Grid -->
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-          <!-- About Content -->
-          <div class="space-y-6" data-aos="fade-up" data-aos-duration="1000">
-            <p class="text-gray-700 text-lg leading-relaxed">
-              I am an IT student with a strong background in programming and software development, specializing in Laravel and database management.
-              I am passionate about problem-solving and participate in programming competitions to sharpen my skills.
-            </p>
-    
-            <div class="text-center mt-8">
-              <a href="resume.pdf"
-                 class="relative inline-block px-6 py-3 font-semibold text-black border-2 border-black rounded-lg bg-transparent transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-xl focus:ring-4 focus:ring-gray-400">
-                  <span class="relative z-10">Download CV</span>
-              </a>
-            </div>
-            
-    
-          <!-- Skills Section -->
-          <div x-data>
-            <template x-for="skill in [
-              { title: 'Web Development - Laravel & Tailwind', percent: 90 },
-              { title: 'Programming - Python & Java', percent: 85 },
-              { title: 'Computer Hardware & Troubleshooting', percent: 95 },
-              { title: 'Database Management', percent: 75 }
-            ]" :key="skill.title">
-              <div class="mb-4">
-                <div class="flex justify-between items-center mb-1">
-                  <span class="text-gray-900 font-semibold" x-text="skill.title"></span>
-                  <span class="text-gray-600" x-text="skill.percent + '%'"></span>
-                </div>
-                <div class="w-full bg-gray-300 h-2 rounded-full">
-                  <div class="bg-gray-500 h-full rounded-full transition-all duration-700 ease-in-out" x-bind:style="'width: ' + skill.percent + '%'"></div>
-                </div>
-              </div>
-            </template>
+  
+          <div class="text-center mt-8">
+            <a href="resume.pdf"
+               class="relative inline-block px-6 py-3 font-semibold text-black border-2 border-black rounded-lg bg-transparent transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-xl focus:ring-4 focus:ring-gray-400">
+              <span class="relative z-10">Download CV</span>
+            </a>
           </div>
         </div>
-    
-        <!-- Services Section -->
-        <div class="mt-16">
-          <h3 class="text-center text-3xl font-bold text-gray-900 mb-10">My Expertise</h3>
-          <div class="grid md:grid-cols-3 gap-8">
-            <!-- Service 1 -->
-            <div class="bg-gray-100 p-6 shadow-lg rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-gray-300"
-              data-aos="fade-up" data-aos-duration="1000">
-              <img class="w-16 mx-auto mb-4" src="img/services/01.svg" alt="Web Development">
-              <h4 class="text-lg font-semibold text-gray-900">Web Development</h4>
-              <p class="text-gray-600 mt-2">Experienced in front-end and back-end development using Laravel and Tailwind CSS.</p>
+  
+        <!-- Skills Section -->
+        <div x-data>
+          <template x-for="skill in [
+            { title: 'Web Development - Laravel & Tailwind', percent: 90 },
+            { title: 'Programming - Python & Java', percent: 85 },
+            { title: 'Computer Hardware & Troubleshooting', percent: 95 },
+            { title: 'Database Management', percent: 75 }
+          ]" :key="skill.title">
+            <div class="mb-4">
+              <div class="flex justify-between items-center mb-1">
+                <span class="text-gray-900 font-semibold" x-text="skill.title"></span>
+                <span class="text-gray-600" x-text="skill.percent + '%'"></span>
+              </div>
+              <div class="w-full bg-gray-300 h-2 rounded-full">
+                <div class="bg-gray-500 h-full rounded-full transition-all duration-700 ease-in-out" x-bind:style="'width: ' + skill.percent + '%'"></div>
+              </div>
             </div>
-    
-            <!-- Service 2 -->
-            <div class="bg-gray-100 p-6 shadow-lg rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-gray-300"
-              data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-              <img class="w-16 mx-auto mb-4" src="img/services/02.svg" alt="Programming">
-              <h4 class="text-lg font-semibold text-gray-900">Programming</h4>
-              <p class="text-gray-600 mt-2">Proficient in Python and Java for application development and problem-solving.</p>
-            </div>
-    
-            <!-- Service 3 -->
-            <div class="bg-gray-100 p-6 shadow-lg rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-gray-300"
-              data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-              <img class="w-16 mx-auto mb-4" src="img/services/03.svg" alt="Hardware Troubleshooting">
-              <h4 class="text-lg font-semibold text-gray-900">Hardware Troubleshooting</h4>
-              <p class="text-gray-600 mt-2">Diagnosing and resolving hardware issues, assembling custom PCs, and optimizing performance.</p>
-            </div>
+          </template>
+        </div>
+      </div>
+  
+      <!-- Services Section -->
+      <div class="mt-16">
+        <h3 class="text-center text-3xl font-bold text-gray-900 mb-10">My Expertise</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div class="bg-gray-100 p-6 shadow-lg rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-gray-300"
+            data-aos="fade-up" data-aos-duration="1000">
+            <img class="w-16 mx-auto mb-4" src="img/services/01.svg" alt="Web Development">
+            <h4 class="text-lg font-semibold text-gray-900">Web Development</h4>
+            <p class="text-gray-600 mt-2">Experienced in front-end and back-end development using Laravel and Tailwind CSS.</p>
+          </div>
+  
+          <!-- Service 2 -->
+          <div class="bg-gray-100 p-6 shadow-lg rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-gray-300"
+            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <img class="w-16 mx-auto mb-4" src="img/services/02.svg" alt="Programming">
+            <h4 class="text-lg font-semibold text-gray-900">Programming</h4>
+            <p class="text-gray-600 mt-2">Proficient in Python and Java for application development and problem-solving.</p>
+          </div>
+  
+          <!-- Service 3 -->
+          <div class="bg-gray-100 p-6 shadow-lg rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-gray-300"
+            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <img class="w-16 mx-auto mb-4" src="img/services/03.svg" alt="Hardware Troubleshooting">
+            <h4 class="text-lg font-semibold text-gray-900">Hardware Troubleshooting</h4>
+            <p class="text-gray-600 mt-2">Diagnosing and resolving hardware issues, assembling custom PCs, and optimizing performance.</p>
           </div>
         </div>
       </div>
-    </section>
-    
-    
-    
-    
-
+    </div>
+  
+    <!-- First Cat Image (Floating Up and Down) -->
+    <div class="absolute top-16 right-16 w-32 h-32">
+      <img src="img/cat1.png" alt="Floating Cat 1" class="w-full h-full">
+    </div>
+  
+    <!-- Second Cat Image (Floating Up and Down) -->
+    <div x-data="{ y: 0, directionY: -1 }" 
+         x-init="setInterval(() => { 
+           // Vertical movement (up and down)
+           y += directionY * 2; 
+           if (y >= 30 || y <= -30) directionY *= -1;
+  
+           // Apply transformations
+           $el.style.transform = 'translateY(' + y + 'px)';
+         }, 50 )" 
+         class="absolute top-16 left-16 w-32 h-32">
+      <img src="img/cat.png" alt="Floating Cat 2" class="w-full h-full">
+    </div>
+  
+  </section>
+  
+ 
 
 <section id="projects" class="bg-gray-100 py-12">
   <div class="container mx-auto px-4">
