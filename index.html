@@ -20,108 +20,157 @@
   </head>
 
   <body>
-    <header id="header" class="header">
-      <div class="container container-lg">
-        <div class="header-nav">
+    <header id="header" class="header bg-white w-full">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between py-4">
+          <!-- Logo -->
           <a
             href="#home"
-            class="logo"
+            class="text-black text-2xl font-bold"
             data-aos="fade-down"
             data-aos-duration="1000"
-            >Rexavier Cenon</a
           >
-          <nav id="nav" class="nav">
-            <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
+            Rexavier Cenon
+          </a>
+    
+          <!-- Navigation -->
+          <nav id="nav" class="hidden md:flex space-x-8">
+            <ul
+              class="flex space-x-6 text-gray-800"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
               <li class="nav-item">
-                <a href="#home" class="nav-link active">Home</a>
+                <a
+                  href="#home"
+                  class="nav-link text-black font-medium hover:text-blue-600"
+                >
+                  Home
+                </a>
               </li>
               <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
+                <a
+                  href="#about"
+                  class="nav-link font-medium hover:text-blue-600"
+                >
+                  About
+                </a>
               </li>
               <li class="nav-item">
-                <a href="#projects" class="nav-link">Works</a>
+                <a
+                  href="#projects"
+                  class="nav-link font-medium hover:text-blue-600"
+                >
+                  Works
+                </a>
               </li>
               <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
+                <a
+                  href="#contact"
+                  class="nav-link font-medium hover:text-blue-600"
+                >
+                  Contact
+                </a>
               </li>
             </ul>
-            <button id="nav-btn" class="nav-btn">
-              <img
-                id="nav-btn-img"
-                src="img/icons/open.svg"
-                alt="Navigation button"
-              />
-            </button>
           </nav>
-        </div>
-      </div>
-    </header>
-
-    <section id="home" class="hero">
-      <div class="container container-lg">
-        <div
-          class="hero-row"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-out"
-          data-aos-delay="500"
-          data-aos-duration="1000"
-        >
-          <div class="hero-content">
-            <span class="hero-greeting"> Hello, I am</span>
-            <h1 class="hero-heading">Rexavier Cenon</h1>
-            <span class="hero-heading-subtitle"
-              >Web Developer & Software Developer</span
-            >
-            <div class="about-social-list">
-              <div class="social-links-row">
-                <a href="https://github.com/Kuna1ma/">
-                  <img
-                    src="img/social_icons/github.svg"
-                    alt="Link to GitHub account"
-                  />
-                </a>
-
-                <a href="#!">
-                  <img
-                    src="img/social_icons/linkedin.svg"
-                    alt="Link to linkedin profile"
-                  />
-                </a>
-
-                <a href="https://www.facebook.com/knmaseir/">
-                  <img
-                    src="img/social_icons/facebook.svg"
-                    alt="Link to facebook profile"
-                /></a>
-                <a href="https://www.instagram.com/wang.desmeon21/">
-                  <img
-                    src="img/social_icons/instagram.svg"
-                    alt="Link to instagram profile"
-                /></a>
-              </div>
-            </div>
-
-            <div>
-              <a href="#projects" class="btn">My Portfolio</a>
-              <a href="#contact" class="btn btn-white">Contact Me</a>
-            </div>
-          </div>
-          <div class="hero-img">
+    
+          <!-- Mobile Nav Button -->
+          <button id="nav-btn" class="md:hidden flex items-center" onclick="toggleMobileMenu()">
             <img
-              src="img/hero/hero.png"
-              alt="Picture of Christian Buehner taken from Unsplash</a>
-              "
+              id="nav-btn-img"
+              src="img/icons/open.svg"
+              alt="Navigation button"
+              class="h-6 w-6"
             />
-          </div>
+          </button>
         </div>
       </div>
-    </section>
+    
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden bg-white w-full md:hidden">
+        <ul class="flex flex-col space-y-4 px-4 py-6 text-gray-800">
+          <li>
+            <a href="#home" class="block text-black font-medium hover:text-blue-600">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="block font-medium hover:text-blue-600">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#projects" class="block font-medium hover:text-blue-600">
+              Works
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="block font-medium hover:text-blue-600">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    
+      <script>
+        function toggleMobileMenu() {
+          const mobileMenu = document.getElementById('mobile-menu');
+          mobileMenu.classList.toggle('hidden');
+        }
+      </script>
+    </header>
+    
 
-    <section id="about" class="py-16 bg-gray-100">
+    <section class="bg-white dark:bg-gray-900 mt-16">
+      <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 items-center">
+          <!-- Left Content -->
+          <div class="lg:col-span-7">
+              <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+                  Hi there, I am Rexavier Cenon
+              </h1>
+              <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                  Web Developer & Software Developer passionate about creating elegant and functional solutions.
+              </p>
+              <div class="flex flex-col space-y-4 mb-6">
+                  <a href="#projects" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-gray-800 rounded-lg transition-all duration-300 hover:bg-white hover:text-gray-800 hover:border hover:border-gray-800 focus:ring-4 focus:ring-gray-500 dark:focus:ring-gray-800 w-fit">
+                      My Portfolio
+                      <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                      </svg>
+                  </a>
+                  <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-800 bg-white border border-gray-800 rounded-lg transition-all duration-300 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 w-fit">
+                      Contact Me
+                  </a>
+              </div>
+              <div class="flex space-x-4">
+                  <a href="https://github.com/Kuna1ma/" target="_blank" class="hover:opacity-80">
+                      <img src="img/social_icons/github.svg" alt="GitHub Profile" class="w-8">
+                  </a>
+                  <a href="#" target="_blank" class="hover:opacity-80">
+                      <img src="img/social_icons/linkedin.svg" alt="LinkedIn Profile" class="w-8">
+                  </a>
+                  <a href="https://www.facebook.com/knmaseir/" target="_blank" class="hover:opacity-80">
+                      <img src="img/social_icons/facebook.svg" alt="Facebook Profile" class="w-8">
+                  </a>
+                  <a href="https://www.instagram.com/wang.desmeon21/" target="_blank" class="hover:opacity-80">
+                      <img src="img/social_icons/instagram.svg" alt="Instagram Profile" class="w-8">
+                  </a>
+              </div>
+          </div>
+          <!-- Image -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+              <img src="img/hero/hero.png" alt="Rexavier Cenon" class="w-64 h-64 rounded-full shadow-lg">
+          </div>
+      </div>
+  </section>
+  
+
+    <section id="about" class="py-16 bg-white text-gray-900">
       <div class="container mx-auto px-6 lg:px-12">
         <!-- Section Title -->
         <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-800">About Me</h2>
+          <h2 class="text-4xl font-bold text-gray-900">About Me</h2>
           <p class="text-gray-600 mt-2">
             Passionate IT student specializing in development, programming, and troubleshooting.
           </p>
@@ -135,17 +184,14 @@
               I am an IT student with a strong background in programming and software development, specializing in Laravel and database management.
               I am passionate about problem-solving and participate in programming competitions to sharpen my skills.
             </p>
-            
-            <!-- Modern Animated Button -->
-            <div class="relative inline-block group">
-              <a href="#!" 
-                class="relative inline-block px-6 py-3 font-semibold text-white rounded-lg transition-all duration-300 ease-in-out bg-gradient-to-r from-blue-500 to-indigo-600 shadow-lg transform group-hover:scale-105 group-hover:shadow-xl focus:ring-4 focus:ring-blue-300"
-              >
-                <span class="relative z-10">Download CV</span>
-                <span class="absolute inset-0 bg-white opacity-10 transition-opacity duration-300 ease-in-out group-hover:opacity-20"></span>
+    
+            <div class="text-center mt-8">
+              <a href="resume.pdf"
+                 class="relative inline-block px-6 py-3 font-semibold text-black border-2 border-black rounded-lg bg-transparent transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-xl focus:ring-4 focus:ring-gray-400">
+                  <span class="relative z-10">Download CV</span>
               </a>
             </div>
-          </div>
+            
     
           <!-- Skills Section -->
           <div x-data>
@@ -157,11 +203,11 @@
             ]" :key="skill.title">
               <div class="mb-4">
                 <div class="flex justify-between items-center mb-1">
-                  <span class="text-gray-800 font-semibold" x-text="skill.title"></span>
+                  <span class="text-gray-900 font-semibold" x-text="skill.title"></span>
                   <span class="text-gray-600" x-text="skill.percent + '%'"></span>
                 </div>
                 <div class="w-full bg-gray-300 h-2 rounded-full">
-                  <div class="bg-gradient-to-r from-blue-500 to-indigo-600 h-full rounded-full transition-all duration-700 ease-in-out" x-bind:style="'width: ' + skill.percent + '%'"></div>
+                  <div class="bg-gray-500 h-full rounded-full transition-all duration-700 ease-in-out" x-bind:style="'width: ' + skill.percent + '%'"></div>
                 </div>
               </div>
             </template>
@@ -170,35 +216,37 @@
     
         <!-- Services Section -->
         <div class="mt-16">
-          <h3 class="text-center text-3xl font-bold text-gray-800 mb-10">My Expertise</h3>
+          <h3 class="text-center text-3xl font-bold text-gray-900 mb-10">My Expertise</h3>
           <div class="grid md:grid-cols-3 gap-8">
             <!-- Service 1 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:border-blue-400 border border-transparent"
+            <div class="bg-gray-100 p-6 shadow-lg rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-gray-300"
               data-aos="fade-up" data-aos-duration="1000">
               <img class="w-16 mx-auto mb-4" src="img/services/01.svg" alt="Web Development">
-              <h4 class="text-lg font-semibold text-gray-800">Web Development</h4>
+              <h4 class="text-lg font-semibold text-gray-900">Web Development</h4>
               <p class="text-gray-600 mt-2">Experienced in front-end and back-end development using Laravel and Tailwind CSS.</p>
             </div>
     
             <!-- Service 2 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:border-blue-400 border border-transparent"
+            <div class="bg-gray-100 p-6 shadow-lg rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-gray-300"
               data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <img class="w-16 mx-auto mb-4" src="img/services/02.svg" alt="Programming">
-              <h4 class="text-lg font-semibold text-gray-800">Programming</h4>
+              <h4 class="text-lg font-semibold text-gray-900">Programming</h4>
               <p class="text-gray-600 mt-2">Proficient in Python and Java for application development and problem-solving.</p>
             </div>
     
             <!-- Service 3 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:border-blue-400 border border-transparent"
+            <div class="bg-gray-100 p-6 shadow-lg rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-gray-300"
               data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
               <img class="w-16 mx-auto mb-4" src="img/services/03.svg" alt="Hardware Troubleshooting">
-              <h4 class="text-lg font-semibold text-gray-800">Hardware Troubleshooting</h4>
+              <h4 class="text-lg font-semibold text-gray-900">Hardware Troubleshooting</h4>
               <p class="text-gray-600 mt-2">Diagnosing and resolving hardware issues, assembling custom PCs, and optimizing performance.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
+    
     
     
 
@@ -304,34 +352,43 @@
 
 
 
-    <section id="contact" class="bg-gray-100 dark:bg-gray-800 py-12">
-      <div class="container mx-auto px-4 max-w-screen-lg">
-        <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-gray-100 mb-6">Contact Me</h2>
-        <p class="text-center text-gray-700 dark:text-gray-300 mb-8">
-          Feel free to reach out to me via phone or email for any inquiries or collaborations.
-        </p>
-        <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-10">
-          <!-- Phone -->
-          <div class="flex items-center space-x-4">
-            <div class="p-4 bg-gray-200 dark:bg-gray-700 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-900 dark:text-gray-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l7-7m0 0l7 7m-7-7v18" />
-              </svg>
-            </div>
-            <span class="text-lg text-gray-900 dark:text-gray-100">09910487896</span>
-          </div>
-          <!-- Email -->
-          <div class="flex items-center space-x-4">
-            <div class="p-4 bg-gray-200 dark:bg-gray-700 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-900 dark:text-gray-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m4-8v16m0-16l4 4m-4-4L8 8" />
-              </svg>
-            </div>
-            <span class="text-lg text-gray-900 dark:text-gray-100">gaculacenon@icloud.com</span>
-          </div>
+<section id="contact" class="bg-gray-100 dark:bg-gray-800 py-16">
+  <div class="container mx-auto px-4 max-w-screen-lg">
+    <h2 class="text-4xl font-extrabold text-center text-gray-900 dark:text-gray-100 mb-8">
+      Contact Me
+    </h2>
+    <p class="text-center text-gray-700 dark:text-gray-300 mb-12">
+      Feel free to reach out for inquiries, collaborations, or just to say hi! Below are my contact details.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Phone -->
+      <div class="flex items-center space-x-6 bg-white dark:bg-gray-700 shadow-lg rounded-lg p-6">
+        <div class="p-4 bg-gray-100 dark:bg-gray-600 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-900 dark:text-gray-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l7-7m0 0l7 7m-7-7v18" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Phone</h3>
+          <p class="text-gray-700 dark:text-gray-300">09910487896</p>
         </div>
       </div>
-    </section>
+      <!-- Email -->
+      <div class="flex items-center space-x-6 bg-white dark:bg-gray-700 shadow-lg rounded-lg p-6">
+        <div class="p-4 bg-gray-100 dark:bg-gray-600 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-900 dark:text-gray-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m4-8v16m0-16l4 4m-4-4L8 8" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Email</h3>
+          <p class="text-gray-700 dark:text-gray-300">gaculacenon@icloud.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     
     <footer class="bg-white dark:bg-gray-800 rounded-lg shadow m-4">
       <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
