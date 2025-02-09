@@ -1,98 +1,446 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Sample</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<html>
-	<head>
-		<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Portfolio Template</title>
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="icon" type="image/x-icon" href="images/favicon.png">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	</head>
+  <body>
+    <header id="header" class="header">
+      <div class="container container-lg">
+        <div class="header-nav">
+          <a
+            href="#home"
+            class="logo"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            >J.Sample</a
+          >
+          <nav id="nav" class="nav">
+            <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Works</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <button id="nav-btn" class="nav-btn">
+              <img
+                id="nav-btn-img"
+                src="img/icons/open.svg"
+                alt="Navigation button"
+              />
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-	<body>
-		<div id="top">
-			<h2>UX/UI</h2>
-			<p class="source">Source Code: <a href="https://www.github.com/jesusalberto18/static-portfolio-template"><i class="fab fa-github"></i></a></p>
-		</div>
-		<img src="images/ui-banner-1.jpg">
-		<div id="navbar">
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#hire">Hire</a></li>
-			</ul>
-		</div>
-		<a href="#">
-			<button class="btn-download">Download My CV Here</button>
-		</a>
-		<div class="intro">
-			<h1>Hello world! <br> My name is [yourName]</h1>
-			<h3>This is my portfolio template</h3>
-		</div>
-		<a href="https://dribbble.com">
-			<button class="btn-hire">Hire</button>
-		</a>
-		<img src="images/ux-banner-1.jpg">
-		<div id="about">
-			<h1>About</h1>
-			<p class="content">Designing meaningful digital experiences that captivate, engage, and simplify life for users is my passion. With my experience in UI/UX design and a strong portfolio of successful projects, I bring an unique blend of creativity and technical expertise to the table. From concept to launch, I take pride in crafting intuitive and aesthetically pleasing designs that solve real world problems. If you're looking for a designer who's dedicated to elevating user experiences and creating impactful solutions, let's connect!</p>
-			<br>
-			<strong class="interest">Interested in:</strong>
-          	<em>React Frontend Developer, Web Designer, UX/UI Designer.</em>
-		</div>
-		<hr>
-		<div id="skills">
-			<h1>Skills</h1>
-			<ul>
-				<li class="left">HTML</li>
-				<li class="right">CSS</li>
-				<li class="left">JavaScript</li>
-				<li class="right">React</li>
-				<li class="left">Figma</li>
-			</ul>
-		</div>
-		<hr>
-		<div id="projects">
-			<h1>Projects</h1>
-			<div class="project-card">
-				<div class="card-image">
-					<img src="images/ux-banner-1.jpg">
-				</div>
-				<div class="card-content">
-					<h2>Project #1</h2>
-					<p>LOREM IPSUM DOLOR SIT AMET</p>
-					<a href="#">Learn More</a>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<div id="hire">
-			<h1>Hire</h1>
-			<form class="form">
-              <input id="name" type="text" name="name" placeholder="Name" required>
-              <input id="lastname" type="text" name="lastname" placeholder="Last Name" required>
-              <input id="phone" type="text" name="phone" placeholder="Phone Number" required>
-              <input id="email" type="text" name="email" placeholder="E-mail" required>
-              <input id="subject" type="text" name="subject" placeholder="Subject" required>
-              <textarea id="message" name="message" rows="5" cols="25" placeholder="Message" required></textarea>
-	          <a type="submit" class="btn-form">Send</a> 
-	        </form>
-		</div>
-		<footer class="footer">
-			<p class="social">Follow my path on:</p>
-	        <div class="social">
-	          <a href="https://www.github.com"><i class="fab fa-github"></i></a>
-	          <a href="https://www.dribbble.com"><i class="fab fa-dribbble"></i></a>
-	          <a href="https://www.figma.com"><i class="fab fa-figma"></i></a>
-	          <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
-	        </div>
-			<h2 class="footer">""A lil bit of frontend here... A lil bit of backend there... Some mobile and UI""</h2>
-			<h2 class="footer">Copyright &copy;, 2023.</h2>
-		</footer>
-	</body>
-	
-	<script src="https://unpkg.com/scrollreveal"></script>
-	<script src="js/scroll.js"></script>
+    <section id="home" class="hero">
+      <div class="container container-lg">
+        <div
+          class="hero-row"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+        >
+          <div class="hero-content">
+            <span class="hero-greeting"> Hello, I am</span>
+            <h1 class="hero-heading">John Sample</h1>
+            <span class="hero-heading-subtitle"
+              >UI/UX Designer & Software Developer</span
+            >
+            <div class="about-social-list">
+              <div class="social-links-row">
+                <a href="#!">
+                  <img
+                    src="img/social_icons/github.svg"
+                    alt="Link to GitHub account"
+                  />
+                </a>
+
+                <a href="#!">
+                  <img
+                    src="img/social_icons/linkedin.svg"
+                    alt="Link to linkedin profile"
+                  />
+                </a>
+
+                <a href="#!">
+                  <img
+                    src="img/social_icons/xing.svg"
+                    alt="Link to Xing profile"
+                  />
+                </a>
+
+                <a href="#!">
+                  <img
+                    src="img/social_icons/facebook.svg"
+                    alt="Link to facebook profile"
+                /></a>
+                <a href="#!">
+                  <img
+                    src="img/social_icons/instagram.svg"
+                    alt="Link to instagram profile"
+                /></a>
+              </div>
+            </div>
+
+            <div>
+              <a href="#projects" class="btn">My Portfolio</a>
+              <a href="#contact" class="btn btn-white">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img
+              src="img/hero/hero.png"
+              alt="Picture of Christian Buehner taken from Unsplash</a>
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-title">
+          <h2 class="title">About Me</h2>
+        </div>
+        <div class="about-row">
+          <div
+            class="about-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <p class="about-descr">
+              Hi, I’m John Sample, a passionate designer and developer
+              specializing in web development, graphic design and photography.
+              With over 10 years of experience, I love transforming ideas into
+              impactful creations that connect and inspire. Outside of work, I
+              enjoy exploring new places, learning new skills and capturing
+              life’s moments. <br /><br />Let’s collaborate and bring your
+              vision to life!
+            </p>
+            <div class="about-download-btn">
+              <a href="#!" class="btn btn-white">Download CV</a>
+            </div>
+          </div>
+          <div
+            class="about-skills"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <div class="skill">
+              <div class="skill-title">Web Design</div>
+              <div class="skill-percent">95%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="95"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">HTML/CSS</div>
+              <div class="skill-percent">90%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="90"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">JavaScript</div>
+              <div class="skill-percent">65%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="65"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Photoshop</div>
+              <div class="skill-percent">80%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services-row">
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+          >
+            <img class="service-card-img" src="img/services/01.svg" alt="" />
+            <h3 class="service-card-title">UI/UX Design</h3>
+            <p>
+              Crafting intuitive and visually appealing user interfaces that
+              enhance experiences through thoughtful, creative designs.
+            </p>
+          </div>
+
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img class="service-card-img" src="img/services/02.svg" alt="" />
+            <h3 class="service-card-title">Frontend Development</h3>
+            <p>
+              Developing responsive, accessible, and dynamic websites using
+              modern tools to create seamless, engaging experiences.
+            </p>
+          </div>
+
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <img class="service-card-img" src="img/services/03.svg" alt="" />
+            <h3 class="service-card-title">Content Writing</h3>
+            <p>
+              Creating compelling and audience-focused content that effectively
+              communicates ideas and delivers meaningful value.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container container-lg">
+        <div class="projects-title">
+          <h2 class="title">Works</h2>
+        </div>
+
+        <div class="projects-row">
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+          >
+            <a href="#!">
+              <img class="project-img" src="img/works/01.jpg" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Finance Dashboard</h5>
+                  <p class="white">UI/UX Design</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            <a href="#!">
+              <img class="project-img" src="img/works/02.jpg" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Product design</h5>
+                  <p class="white">UI/UX Design</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
+            <a href="#!">
+              <img class="project-img" src="img/works/03.jpg" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Landing Page</h5>
+                  <p class="white">UI/UX Design, Web Development</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+          >
+            <a href="#!">
+              <img class="project-img" src="img/works/04.jpg" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Portfolio</h5>
+                  <p class="white">Web Development</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="1200"
+            data-aos-duration="1000"
+          >
+            <a href="#!">
+              <img class="project-img" src="img/works/05.jpg" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Cosmic Sea</h5>
+                  <p class="white">UI/UX Design, Web Development</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="1500"
+            data-aos-duration="1000"
+          >
+            <a href="#!">
+              <img class="project-img" src="img/works/06.jpg" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">eCommerce</h5>
+                  <p class="white">Web Development</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-title">
+          <h2 class="title">Contact</h2>
+        </div>
+        <div class="contact-content">
+          <p>
+            Tell me about your project.
+            <br />
+            Let's talk and work together!
+          </p>
+        </div>
+
+        <form class="contactForm" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <div
+            class="contact-button"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
+            <button href="#!" class="btn btn-red" name="submit" type="submit">
+              Send Message
+            </button>
+          </div>
+        </form>
+        <div class="response"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="social-links-row footer-social">
+            <a href="#!">
+              <img
+                src="img/social_icons/github.svg"
+                alt="Link to GitHub account"
+              />
+            </a>
+
+            <a href="#!">
+              <img
+                src="img/social_icons/linkedin.svg"
+                alt="Link to linkedin profile"
+              />
+            </a>
+
+            <a href="#!">
+              <img src="img/social_icons/xing.svg" alt="Link to Xing profile" />
+            </a>
+
+            <a href="#!">
+              <img
+                src="img/social_icons/facebook.svg"
+                alt="Link to facebook profile"
+            /></a>
+
+            <a href="#!">
+              <img
+                src="img/social_icons/instagram.svg"
+                alt="Link to instagram profile"
+            /></a>
+          </div>
+
+          <div class="footer-copyright">
+            <p>&copy; Copyright John Sample 2024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="goToTop" class="goToTop">
+      <a href="#home">
+        <img src="img/icons/arrow_up.svg" alt="Back to top"
+      /></a>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>

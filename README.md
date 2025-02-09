@@ -1,29 +1,56 @@
-# Static Portfolio Template
+# Simple Developer Portfolio Template
 
-This is a portfolio template made with pure HTML, CSS & JavaScript.
+![Project Preview](portfolio_preview.jpg)
 
-A portfolio template built totally <b>open-source</b>, built having developers in mind and looking to help you in advance with the development of your portfolio, giving you the structure of a personal portfolio for:
+## Description
 
-<b>Software engineers, web designers, UX/UI designers and more...</b>
+This is a very simple, but elegant responsive portfolio template built using plain JavaScript, HTML, and CSS. It’s designed to be easily customizable, allowing any developer to quickly create a personal portfolio site. Below you'll find detailed information about the features and how to use this template.
 
-You need to follow the next steps to clone this repo:
+## Table of Contents
 
-# Clone this repository
+- [Features](#features)
+- [Live Preview](#live-preview)
+- [Usage](#usage)
+- [Recent Updates](#recent-updates)
+- [License](#license)
 
-The first thing you need to do is to open your terminal/cmd, access to the directory where you want to keep your project, then copy and paste this code:
+## Features
 
-### HTTPS
+- Responsive Design
+- Single-page layout
+- Simple and customizable
+- PHP Mailer Integration
 
-```git clone https://github.com/albertiaedev/static-portfolio-templates.git```
+## Live Preview
 
-### SSH
+Check out the live preview of the Simple Developer Portfolio [here](https://hhlitval.github.io/simple-portfolio-template).
 
-```git clone git@github.com:albertiaedev/static-portfolio-template.git```
+## Usage
 
-And that's it! It creates a local copy of this repository in your machine.
+To use this template, follow these steps:
 
-## Donate
+1. **Clone the Repository**: 
+    ```bash
+    git clone https://github.com/hhlitval/simple-portfolio-template.git
+    ```
+2. **Customization**:
+   - Update `index.html` with your information.
+   - Modify `style.css` for custom styles.
+3. **Email Integration**:
+   To enable email functionality:
+   - Upload the project to a PHP-enabled server.
+   - Configure the `mail.php` file with your email credentials.
+4. **Deployment**:
+   - Host the project on a server that supports PHP for email functionality.
+   - **If hosting on GitHub Pages, note that email handling will not work, since GitHub Pages is a static hosting service**.
 
-<a href="https://www.paypal.com/paypalme/j2al444">
-<img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" />
-</a>
+## Recent Updates
+
+- Refactored font sizes and styles for improved readability and balance.
+- Reworked animations for smoother transitions and a modern look.
+- Removed the preloader for a faster, simplified user experience.
+- Added [PHP Mailer](https://github.com/PHPMailer/PHPMailer) integration for email handling (requires a PHP-enabled server, not supported on GitHub Pages).
+
+## License
+
+This project is licensed under the MIT License.
