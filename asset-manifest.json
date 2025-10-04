@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/rcenon/static/css/main.12b9c2b9.css",
-    "main.js": "/rcenon/static/js/main.ec84bc8c.js",
+    "main.js": "/rcenon/static/js/main.6f0c193a.js",
     "static/js/453.103cdf4f.chunk.js": "/rcenon/static/js/453.103cdf4f.chunk.js",
     "index.html": "/rcenon/index.html",
     "main.12b9c2b9.css.map": "/rcenon/static/css/main.12b9c2b9.css.map",
-    "main.ec84bc8c.js.map": "/rcenon/static/js/main.ec84bc8c.js.map",
+    "main.6f0c193a.js.map": "/rcenon/static/js/main.6f0c193a.js.map",
     "453.103cdf4f.chunk.js.map": "/rcenon/static/js/453.103cdf4f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.12b9c2b9.css",
-    "static/js/main.ec84bc8c.js"
+    "static/js/main.6f0c193a.js"
   ]
 }
